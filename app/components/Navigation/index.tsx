@@ -11,10 +11,11 @@ const Navigation: React.FC = () => {
   // dynamically rendering sections
   const sections: string[] = [
     "Introduction",
-    "Skills",
+    "What I Do",
     "Experience",
     "Projects",
   ];
+  const ids: string[] = ["introduction", "whatIDo", "experience", "projects"];
 
   return (
     <div className="flex space-x-12">
@@ -24,7 +25,15 @@ const Navigation: React.FC = () => {
             index === activeIndex ? "text-blue-500 underline" : ""
           }`}
           key={index}
-          onClick={() => setActiveIndex(index)}
+          onClick={() => {
+            setActiveIndex(index);
+
+            // get section and scroll using id
+            const element = document.getElementById(ids[index]);
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
         >
           {value}
         </button>
