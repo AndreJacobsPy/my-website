@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import styles from "./index.module.css";
 
 // navigation client component
 const Navigation: React.FC = () => {
@@ -8,7 +9,6 @@ const Navigation: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   // dynamically rendering sections
-  const baseStyles = "text-lg font-bold";
   const sections: string[] = [
     "Introduction",
     "Skills",
@@ -20,7 +20,7 @@ const Navigation: React.FC = () => {
     <div className="flex space-x-12">
       {sections.map((value, index) => (
         <button
-          className={`${baseStyles} ${
+          className={`${styles.navbutton} ${
             index === activeIndex ? "text-blue-500 underline" : ""
           }`}
           key={index}
