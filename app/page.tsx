@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
+import Skills from "./components/Skills/Skills";
 
 const Home: React.FC = () => {
   return (
@@ -14,7 +15,8 @@ const Home: React.FC = () => {
         </div>
 
         <div className="my-32 mx-16" id="whatIDo">
-          <p>What I Do</p>
+          <h1 className="text-2xl">What I Do</h1>
+          <Skills />
         </div>
       </main>
     </div>
