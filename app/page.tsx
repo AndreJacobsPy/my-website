@@ -18,6 +18,10 @@ const Home: React.FC = () => {
           <h1 className="text-2xl">What I Do</h1>
           <Skills />
         </div>
+
+        <div id="experience">
+          <h1 className="text-2xl">Experience</h1>
+        </div>
       </main>
     </div>
   );

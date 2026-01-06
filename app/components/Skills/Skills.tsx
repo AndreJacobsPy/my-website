@@ -1,5 +1,3 @@
-import React from "react";
-
 // skill tile component
 interface SkillTileProps {
   skillName: string;
