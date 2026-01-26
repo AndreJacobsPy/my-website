@@ -1,0 +1,5 @@
+@reference "../../globals.css";
+
+.navbutton {
+  @apply text-lg font-bold hover:text-blue-700 hover:underline;
+}
