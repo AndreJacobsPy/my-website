@@ -22,7 +22,7 @@ const Navigation: FunctionComponent = () => {
       {sections.map((value, index) => (
         <button
           className={`${styles.navbutton} ${
-            index === activeIndex ? "text-blue-500 underline" : ""
+            index === activeIndex ? "text-blue-500" : ""
           }`}
           key={index}
           onClick={() => {

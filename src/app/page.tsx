@@ -5,7 +5,7 @@ const Home: FunctionComponent = () => {
   return (
     <div>
       <main id="introduction">
-        <div className="sticky py-4 top-0 z-50 dark:bg-[#0a0a0a]">
+        <div className="sticky py-4 top-0 z-80 dark:bg-[#0a0a0a]">
           <Header/>
         </div>
 
